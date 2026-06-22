@@ -1,0 +1,1483 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --alto-header: 92px;
+}
+
+body {
+  background-color: #fffaf3;
+  color: #333;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+header {
+  background-color: #ff914d;
+  color: white;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+main {
+  padding-top: var(--alto-header);
+}
+
+
+header h1 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.boton {
+  display: inline-block;
+  background-color: #ff914d;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #e97830;
+}
+
+.boton-volver {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 14px 25px;
+  border-radius: 25px;
+}
+
+.boton-donar-header {
+  flex-shrink: 0;
+  width: auto;
+  margin: 0;
+  padding: 12px 24px;
+  background-color: white;
+  color: #ff6f20;
+  border: 3px solid white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.boton-donar-header:hover {
+  background-color: #ff6f20;
+  color: white;
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.hero {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  background-repeat: no-repeat;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+
+.pagina-inicio .hero {
+  min-height: 500px;
+  height: auto;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal1.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-inicio .hero > div {
+  max-width: 800px;
+}
+
+.pagina-inicio .hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pagina-inicio .hero p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.pagina-nosotros .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal5.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-acciones .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal9.jpg");
+  background-size: cover;
+  background-position: 50% 10%;
+}
+
+.pagina-adopciones .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal21.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-atencion-veterinaria .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal18.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-como-ayudar .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal13.png");
+  background-size: 90%;
+  background-position: center 20%;
+  background-repeat: repeat;
+}
+
+.pagina-contacto .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal17.jpeg");
+  background-size: 90%;
+  background-position: center 50%;
+  background-repeat: repeat;
+
+}
+
+.pagina-donar .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal16.jpeg");
+  background-size: 100%;
+  background-position: center 40%;
+  background-repeat: repeat;
+}
+
+.pagina-informacion .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal14.avif");
+  background-size: 100%;
+  background-position: center 2%;
+}
+
+.pagina-rescates .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal10.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-transitar .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("imagenes/animal15.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+section {
+  padding: 70px 50px;
+}
+
+.pagina-inicio section {
+  padding: 60px 50px;
+}
+
+.titulo,
+.titulo-seccion {
+  text-align: center;
+  color: #ff914d;
+  margin-bottom: 25px;
+}
+
+.titulo {
+  font-size: 38px;
+}
+
+.titulo-seccion {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.descripcion,
+.texto-centro,
+.contenido {
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.descripcion {
+  max-width: 900px;
+  font-size: 18px;
+}
+
+.pagina-como-ayudar .descripcion {
+  max-width: 950px;
+}
+
+.pagina-contacto .descripcion {
+  margin-bottom: 50px;
+}
+
+.texto-centro {
+  max-width: 850px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contenido {
+  max-width: 1000px;
+  font-size: 19px;
+}
+
+
+.contenedor,
+.contenedor-tarjetas,
+.contenedor-comentarios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contenedor {
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contenedor-tarjetas {
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card,
+.tarjeta,
+.comentario,
+.info,
+.formulario-contacto,
+.bloque {
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card,
+.tarjeta,
+.comentario {
+  transition: 0.3s;
+}
+
+.card:hover,
+.tarjeta:hover,
+.comentario:hover {
+  transform: translateY(-5px);
+}
+
+/* Tarjetas del inicio */
+
+.tarjeta {
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.tarjeta h3 {
+  color: #ff914d;
+  margin-bottom: 12px;
+}
+
+.tarjeta p {
+  line-height: 1.5;
+}
+
+.ayuda {
+  background-color: #ffe3c7;
+}
+
+.contacto-inicio {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.contacto-inicio h2 {
+  color: #ff914d;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas de Nosotros */
+
+.pagina-nosotros .card {
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+}
+
+.pagina-nosotros .card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.pagina-nosotros .card h3 {
+  color: #ff914d;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.pagina-nosotros .card p {
+  line-height: 1.6;
+}
+
+/* Tarjetas de Acciones y Cómo ayudar */
+
+.pagina-acciones .card,
+.pagina-como-ayudar .card {
+  width: 320px;
+  overflow: hidden;
+}
+
+.pagina-acciones .card img,
+.pagina-como-ayudar .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.pagina-acciones .card h3,
+.pagina-como-ayudar .card h3 {
+  color: #ff914d;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.pagina-acciones .card p,
+.pagina-como-ayudar .card p {
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.pagina-como-ayudar .card .boton {
+  margin-top: 20px;
+  padding: 12px 24px;
+}
+
+/* ---------- Bloques informativos ---------- */
+
+.bloque {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 35px;
+}
+
+.bloque h3 {
+  color: #ff914d;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.bloque p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.pagina-adopciones .bloque p,
+.pagina-donar .bloque p,
+.pagina-informacion .bloque p,
+.pagina-transitar .bloque p {
+  text-align: center;
+}
+
+.lista {
+  max-width: 700px;
+  margin: 25px auto;
+  padding-left: 25px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.lista li {
+  margin-bottom: 10px;
+}
+
+/* ---------- Comentarios ---------- */
+
+.comentarios {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.titulo-comentarios {
+  color: #ff914d;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.contenedor-comentarios {
+  gap: 25px;
+}
+
+.comentario {
+  width: 300px;
+  padding: 28px;
+}
+
+.comentario p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.comentario h4 {
+  color: #ff914d;
+  font-size: 16px;
+}
+
+/* ---------- Contacto ---------- */
+
+.pagina-contacto .contenedor {
+  gap: 40px;
+  margin-top: 0;
+}
+
+.info {
+  width: 350px;
+  padding: 35px;
+}
+
+.info h3 {
+  color: #ff914d;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.info p {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.formulario-contacto {
+  width: 450px;
+  padding: 35px;
+}
+
+.formulario-contacto h3 {
+  color: #ff914d;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.formulario-contacto textarea {
+  resize: none;
+  height: 140px;
+}
+
+.formulario-contacto button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #ff914d;
+  color: white;
+  font-size: 17px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario-contacto button:hover {
+  background-color: #e97830;
+}
+
+/* ---------- Modal de donación ---------- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  width: 450px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.modal h2 {
+  color: #ff914d;
+  margin-bottom: 12px;
+  padding-right: 40px;
+}
+
+.modal > p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #e97830;
+}
+
+.mensaje-exito {
+  display: none;
+  margin-top: 18px;
+  padding: 12px;
+  background-color: #e8f7e8;
+  color: #267326;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ---------- Pie de página ---------- */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+.pagina-contacto footer {
+  margin-top: 50px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 992px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 22px 25px;
+  }
+
+  header h1 {
+    font-size: 27px;
+    white-space: normal;
+  }
+
+  nav {
+    gap: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .boton-donar-header {
+    padding: 10px 20px;
+  }
+
+  .hero {
+    height: 320px;
+    padding: 30px 20px;
+  }
+
+  .hero h2,
+  .pagina-inicio .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p,
+  .pagina-inicio .hero p {
+    font-size: 17px;
+  }
+
+  .pagina-inicio .hero {
+    min-height: 450px;
+  }
+
+  .pagina-como-ayudar .hero,
+  .pagina-contacto .hero {
+    background-size: cover;
+  }
+
+  section,
+  .pagina-inicio section {
+    padding: 50px 25px;
+  }
+
+  .titulo {
+    font-size: 32px;
+  }
+
+  .titulo-seccion {
+    font-size: 30px;
+  }
+
+  .card,
+  .tarjeta,
+  .comentario,
+  .info,
+  .formulario-contacto {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .bloque {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2,
+  .pagina-inicio .hero h2 {
+    font-size: 32px;
+  }
+
+  .titulo,
+  .titulo-seccion {
+    font-size: 29px;
+  }
+
+  .modal {
+    padding: 28px 22px;
+  }
+}
+
+/* ==================================================
+   COMPONENTES NUEVOS: HEADER, LANDING, CALCULADORA Y FOOTER
+   ================================================== */
+
+/* ---------- Encabezado universal ---------- */
+.encabezado-principal {
+  display: block;
+  padding: 25px 50px;
+}
+
+.encabezado-contenido {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+
+.encabezado-principal h1 {
+  width: auto;
+  line-height: 1.2;
+}
+
+.marca {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-derecha {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+}
+
+.menu-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: nowrap;
+}
+
+.menu-principal a {
+  margin: 0;
+}
+
+.menu-principal a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ---------- Sección landing de impacto ---------- */
+.impacto-landing {
+  background-color: #fffaf3;
+}
+
+.impacto-landing-contenido {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  background-color: white;
+  border-radius: 22px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.impacto-landing-texto {
+  max-width: 620px;
+}
+
+.impacto-landing-texto .titulo-seccion {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.impacto-landing-texto p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: #ffe3c7;
+  color: #b94f11;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.impacto-landing-datos {
+  min-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.impacto-landing-datos div {
+  min-height: 120px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background-color: #fff3e7;
+  text-align: center;
+  font-weight: bold;
+}
+
+.impacto-landing-datos strong {
+  font-size: 32px;
+}
+
+/* ---------- Calculadora de impacto ---------- */
+.seccion-calculadora {
+  padding-top: 10px;
+}
+
+.calculadora-impacto {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 30px;
+}
+
+.formulario-impacto,
+.resultado-impacto {
+  min-height: 360px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.formulario-impacto {
+  background-color: white;
+}
+
+.formulario-impacto > label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.campo-monto {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.campo-monto:focus-within {
+  border-color: #ff914d;
+  box-shadow: 0 0 0 3px rgba(255, 145, 77, 0.18);
+}
+
+.campo-monto span {
+  padding-left: 16px;
+  color: #ff914d;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.campo-monto input {
+  width: 100%;
+  padding: 16px 14px;
+  border: none;
+  outline: none;
+  font-size: 19px;
+}
+
+.montos-sugeridos {
+  margin: 18px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.montos-sugeridos button {
+  padding: 11px;
+  border: 1px solid #ff914d;
+  border-radius: 22px;
+  background-color: white;
+  color: #d96622;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.montos-sugeridos button:hover,
+.montos-sugeridos button.seleccionado {
+  background-color: #ff914d;
+  color: white;
+}
+
+.boton-calcular {
+  width: 100%;
+  text-align: center;
+}
+
+.resultado-impacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffe3c7;
+  text-align: center;
+}
+
+.resultado-inicial span,
+.resultado-error span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 50px;
+}
+
+.resultado-inicial h3 {
+  margin-bottom: 12px;
+  color: #d96622;
+  font-size: 25px;
+}
+
+.resultado-inicial p,
+.resultado-error p {
+  line-height: 1.6;
+}
+
+.resultado-monto {
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.opciones-impacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.opcion-impacto {
+  padding: 18px 10px;
+  border-radius: 14px;
+  background-color: white;
+}
+
+.opcion-impacto span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 30px;
+}
+
+.opcion-impacto strong {
+  display: block;
+  color: #ff6f20;
+  font-size: 28px;
+}
+
+.opcion-impacto p {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.resultado-donar {
+  margin-top: 22px;
+  align-self: center;
+}
+
+.aclaracion-impacto {
+  max-width: 900px;
+  margin: 22px auto 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------- Formulario de contacto mejorado ---------- */
+.formulario-contacto label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.formulario-contacto select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+}
+
+.mensaje-formulario {
+  display: none;
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #e8f7e8;
+  color: #267326;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ---------- Footer profesional ---------- */
+.footer-principal {
+  margin-top: 0;
+  padding: 0;
+  background-color: #222;
+  color: white;
+  text-align: left;
+}
+
+.pagina-contacto .footer-principal {
+  margin-top: 50px;
+}
+
+.footer-contenido {
+  max-width: 1200px;
+  margin: auto;
+  padding: 55px 50px 40px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr;
+  gap: 60px;
+}
+
+.footer-columna h2,
+.footer-columna h3 {
+  margin-bottom: 18px;
+  color: #ff914d;
+}
+
+.footer-columna h2 {
+  font-size: 25px;
+}
+
+.footer-columna h3 {
+  font-size: 19px;
+}
+
+.footer-columna p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.footer-marca p {
+  max-width: 430px;
+  color: #ddd;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-menu a {
+  margin: 0;
+  color: #eee;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.footer-menu a:hover {
+  color: #ff914d;
+  text-decoration: none;
+}
+
+.footer-donar {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: 2px solid #ff914d;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.footer-donar:hover {
+  background-color: #ff914d;
+}
+
+.footer-inferior {
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #444;
+  color: #ccc;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .encabezado-contenido {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .encabezado-principal h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-derecha {
+    justify-content: center;
+  }
+
+  .menu-principal {
+    gap: 20px;
+  }
+
+  .impacto-landing-contenido {
+    padding: 38px;
+  }
+
+  .footer-contenido {
+    gap: 35px;
+  }
+}
+
+/* ---------- Celular y tablet vertical ---------- */
+@media (max-width: 900px) {
+  .encabezado-principal {
+    padding: 20px 25px;
+  }
+
+  .encabezado-contenido {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .encabezado-principal h1 {
+    width: auto;
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .marca {
+    white-space: normal;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-derecha {
+    display: none;
+    width: 100%;
+    padding-top: 8px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .header-derecha.menu-abierto {
+    display: flex;
+  }
+
+  .menu-principal {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menu-principal a {
+    width: 100%;
+    padding: 11px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    text-align: center;
+  }
+
+  .pagina-acciones .card,
+  .pagina-como-ayudar .card,
+  .pagina-nosotros .card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .boton-donar-header {
+    margin-top: 3px;
+  }
+
+  .impacto-landing-contenido,
+  .calculadora-impacto {
+    display: block;
+  }
+
+  .impacto-landing-contenido {
+    padding: 35px 28px;
+  }
+
+  .impacto-landing-texto {
+    max-width: none;
+    text-align: center;
+  }
+
+  .impacto-landing-texto .titulo-seccion {
+    text-align: center;
+  }
+
+  .impacto-landing-datos {
+    margin-top: 30px;
+  }
+
+  .resultado-impacto {
+    margin-top: 25px;
+  }
+
+  .footer-contenido {
+    padding: 45px 30px 35px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-marca {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 600px) {
+  .encabezado-principal {
+    padding: 17px 18px;
+  }
+
+  .encabezado-principal h1 {
+    max-width: calc(100% - 94px);
+    font-size: 22px;
+  }
+
+  .menu-toggle {
+    padding: 8px 11px;
+    font-size: 14px;
+  }
+
+  .texto-menu {
+    display: none;
+  }
+
+  .pagina-inicio .hero {
+    min-height: 420px;
+  }
+
+  .hero {
+    height: 290px;
+    padding: 25px 18px;
+  }
+
+  .hero h2,
+  .pagina-inicio .hero h2 {
+    font-size: 31px;
+    line-height: 1.15;
+  }
+
+  .hero p,
+  .pagina-inicio .hero p {
+    font-size: 16px;
+  }
+
+  section,
+  .pagina-inicio section {
+    padding: 45px 18px;
+  }
+
+  .descripcion,
+  .texto-centro,
+  .contenido,
+  .bloque p {
+    font-size: 16px;
+  }
+
+  .impacto-landing-contenido {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .impacto-landing-datos {
+    min-width: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .impacto-landing-datos div {
+    min-height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 14px 18px;
+  }
+
+  .formulario-impacto,
+  .resultado-impacto {
+    min-height: 0;
+    padding: 25px 20px;
+  }
+
+  .montos-sugeridos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .opciones-impacto {
+    grid-template-columns: 1fr;
+  }
+
+  .opcion-impacto {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .opcion-impacto span,
+  .opcion-impacto strong,
+  .opcion-impacto p {
+    margin: 0;
+  }
+
+  .footer-contenido {
+    padding: 40px 22px 30px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-marca {
+    grid-column: auto;
+  }
+
+  .footer-inferior {
+    padding: 18px 22px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
